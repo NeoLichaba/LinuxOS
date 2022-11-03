@@ -1,0 +1,43 @@
+3 November 2022
+----------------
+Linux Terminal Commands
+-------------------------
+
+1. Why Master The Command Line
+
+- More control over machine 
+- Faster
+- Automate many tasks
+- Available everywhere
+- Required
+- Needed for cloud computing
+
+2. World of OS
+
+- Windows OS vs. UNIX OS
+- Linux, Android, Chrome, Mac OS X - descendent of UNIX
+
+3. Shells and Bash
+
+- Terminal: Runs a shell
+- Shell: Computer interface to an OS
+	- Outer layer around OS
+	- Takes commands and passes to OS to perform
+	- Linux - bash; Mac - ZSH etc.
+	- Bash - common
+
+
+Linux Commands
+-------------------------------
+- pwd - print working directory
+- whoami - who am I?
+- man - manual; informative;
+      - man <command> - provides more information on the command
+- q - quit command
+- clear - clears all prev commands
+
+	       
+
+
+
+
