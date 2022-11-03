@@ -30,11 +30,22 @@ Linux Terminal Commands
 Linux Commands
 -------------------------------
 - pwd - print working directory
+      - tells user of current working directory
 - whoami - who am I?
 - man - manual; informative;
       - man <command> - provides more information on the command
 - q - quit command
 - clear - clears all prev commands
+	- clear -x 
+	- ctrl + l (shortcut)
+- Synopsis (in manual) - contains syntax/different options
+- ls - list contents of current directory
+- ls <name of file>/ - provide relative path (relative to location) and peek somewhere else
+		     - only works if in the particular location 
+- ls /home/neo/Documents/ - provide full absolute path to peek into a particular folder
+- ls -l
+- ls -a - includes in your list, files that begin with a .
+
 
 	       
 
