@@ -39,12 +39,53 @@ Linux Commands
 	- clear -x 
 	- ctrl + l (shortcut)
 - Synopsis (in manual) - contains syntax/different options
+
+List
+------
 - ls - list contents of current directory
 - ls <name of file>/ - provide relative path (relative to location) and peek somewhere else
 		     - only works if in the particular location 
 - ls /home/neo/Documents/ - provide full absolute path to peek into a particular folder
-- ls -l
+- ls -l - long listing format
 - ls -a - includes in your list, files that begin with a .
+
+Change Directory
+-------------------
+- cd - change directory; no manual for cd; 
+- cd <file name> - change directory to file name
+- cd .. - parent directory (back 1 level)
+- cd ../../ - change back multiple levels
+- cd </home/neo/Documents/> - change to folder giving absolute path
+- cd ~/Desktop/ - change directory to home
+
+Folder Structure
+---------------------
+- / - root folder
+- /home directory - houses Desktop, Documents folder etc.
+
+~ - home directory
+
+Creating files/folders
+-------------------------------
+- mkdir - make directory
+- mkdir -p <file names> - make nested folders
+- touch - creates files
+	- mostly uses text editor
+	- if file already exists, opens the file in write mode and timestamp of the file is updated
+
+Removing files
+-------------------------------
+- rmdir <filename/> - remove directory; works if folder is empty 
+- rm -r <filename/> - remove (recursive) directory (with content)
+- rm -ri <filename/> - descends into file and actively decide what to keep 
+- rm <filename> - removes files/directories; unable to locate folder thus be careful when doing so
+- rm -v - remove verbose; lists output of what was deleted
+- rm -rv 
+
+- open <filename> - open
+- open <directory name> - open
+- mv -v - move (verbose) file; specify current path and its new path; last path = destination folder
+        - how you rename files and folders
 
 
 	       
