@@ -103,7 +103,7 @@ Reading Files
 
 - date - prints out current date and time
 
-- > - redirects where info should be stored
+- > - output redirection operator redirects where info should be stored
     - e.g date > <filename>
     - if command run again, contents of the file are updated vs. replaced
     - file does not have to exist to redirect output to it
@@ -111,8 +111,21 @@ Reading Files
 - >> - redirects standard output and then appends to the file
      - ls -l >> <filename> - lists contents and appends to the file
 
+- cat <filename> - entire contents of file printed
+		 - concatenates content of multiple files into new file
+- cat <filename> <filename> > <filename> - concatenates contents of files to last file
+- cat -n - obtain line number within a file
 
+- less <filename> - used to read contents of files, giving you an interactive UI
+- Enable you to scroll down via arrow keys
+- / <phrase> - search document
+- shift + G - end of the file
+- shift + g - top of the file
 
+- echo <"argument"> - echos what you have printed out
+- echo "argument" > <filename> - argument echoed and redirected into file instead of printing into terminal
+
+- echo "argument" >> <filename> - argument echoed and appended into file instead of printing into terminal
 
 	       
 
