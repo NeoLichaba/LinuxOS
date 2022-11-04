@@ -84,8 +84,34 @@ Removing files
 
 - open <filename> - open
 - open <directory name> - open
-- mv -v - move (verbose) file; specify current path and its new path; last path = destination folder
+- mv -v <filename> <destination>- move (verbose) file; specify current path and its new path; last path = destination folder
         - how you rename files and folders
+
+Copy
+--------------------------------
+
+- cp <file name> <destination>
+- cp -r <filename> <destination> - list of how files are copied
+
+Reading Files
+--------------------------------
+- head - output first part of files (default: first 10 files)
+- head <filename> - n - n number to be specified
+- tail - output last part of files 
+- tail <filename> -n - n number to be specified
+- tail -f - listens until the 
+
+- date - prints out current date and time
+
+- > - redirects where info should be stored
+    - e.g date > <filename>
+    - if command run again, contents of the file are updated vs. replaced
+    - file does not have to exist to redirect output to it
+    - ls - l > <filename> - lists contents and redirect to file
+- >> - redirects standard output and then appends to the file
+     - ls -l >> <filename> - lists contents and appends to the file
+
+
 
 
 	       
