@@ -127,7 +127,32 @@ Reading Files
 
 - echo "argument" >> <filename> - argument echoed and appended into file instead of printing into terminal
 
-	       
+- wc - provides info about a file or inout it receives via pipes
+     - counts number of lines, words and bytes in an input
+     - wc -l - number of lines
+
+Piping - Take output of one command and pass it as input to another command
+----------------------------------------------------------------------------
+
+- ls - l | wc - list all lines piped to wc
+- combine 2 diff files and pipe to wc
+
+- sort <filename> - sorts info in the file alphabetically
+	          - case sensitive - uppercase preferred over lowercase
+- sort -n nums - sorts numerically
+- sort -nr nums - sorts backwards
+- sort -un nums - unique numbers printed out 
+- cat <filename> <filename> | sort - concatenate files and pipe output to sort
+- sort -un nums | wc -l - in the nums file, sort unique values, pipe it over to word count and return count of lines
+
+- uniq - used in conjunction with sort
+       - omits duplicated lines
+
+- sort <filename> | uniq - sorts and returns only unique values 
+- sort -u <filename> | uniq - d - only duplicates returned
+- sort -u <filename> | uniq - u - only non-duplicates returned
+- sort -u <filename> | uniq - c - count of duplicates returned
+- sort -u <filename> | uniq - c | sort -n - count of duplicates returned and then sort numerically  
 
 
 
