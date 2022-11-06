@@ -236,7 +236,41 @@ Linux Commands
 - history - all commands run in terminal
 - history !<line number> - command at line number
 - history | grep 'cookie'
-  
+
+*PS
+----------------------------------------
+
+- helps views processes running on computer
+- ps
+- ps ax: - all processes running on computer by all users
+- id provided by process
+- provide grep with ps command
+
+* Top
+--------------------------------------------
+- top most memory intensive processes
+- top -o mem - sort by memory
+
+* Kill
+------------------------------------------
+
+- killing processes
+- kill -l - list signals you can send
+- kill <PID> - kill process ID
+- ps a - identify which process you want to kill
+- kill -9 <PID> - pulls the plug
+- killall - sends signal to multiple process at once
+- killall <name> - name of process to be killed provided
+
+- jobs - check processes running 
+- bg <number> - background
+- fg <number> - foreground
+- ctrl + z - pauses command
+- sleep <# of secs> -  delays job by number of seconds
+
+* Compressing files
+------------------------------------------------
+- gzip - compresses files
 
 
 
