@@ -40,8 +40,8 @@ Linux Commands
 	- ctrl + l (shortcut)
 - Synopsis (in manual) - contains syntax/different options
 
-List
-------
+* List
+-----------
 - ls - list contents of current directory
 - ls <name of file>/ - provide relative path (relative to location) and peek somewhere else
 		     - only works if in the particular location 
@@ -49,7 +49,7 @@ List
 - ls -l - long listing format
 - ls -a - includes in your list, files that begin with a .
 
-Change Directory
+* Change Directory
 -------------------
 - cd - change directory; no manual for cd; 
 - cd <file name> - change directory to file name
@@ -58,14 +58,14 @@ Change Directory
 - cd </home/neo/Documents/> - change to folder giving absolute path
 - cd ~/Desktop/ - change directory to home
 
-Folder Structure
+* Folder Structure
 ---------------------
 - / - root folder
 - /home directory - houses Desktop, Documents folder etc.
 
 ~ - home directory
 
-Creating files/folders
+* Creating files/folders
 -------------------------------
 - mkdir - make directory
 - mkdir -p <file names> - make nested folders
@@ -73,7 +73,7 @@ Creating files/folders
 	- mostly uses text editor
 	- if file already exists, opens the file in write mode and timestamp of the file is updated
 
-Removing files
+* Removing files
 -------------------------------
 - rmdir <filename/> - remove directory; works if folder is empty 
 - rm -r <filename/> - remove (recursive) directory (with content)
@@ -87,13 +87,13 @@ Removing files
 - mv -v <filename> <destination>- move (verbose) file; specify current path and its new path; last path = destination folder
         - how you rename files and folders
 
-Copy
+* Copy
 --------------------------------
 
 - cp <file name> <destination>
 - cp -r <filename> <destination> - list of how files are copied
 
-Reading Files
+* Reading Files
 --------------------------------
 - head - output first part of files (default: first 10 files)
 - head <filename> - n - n number to be specified
@@ -131,7 +131,7 @@ Reading Files
      - counts number of lines, words and bytes in an input
      - wc -l - number of lines
 
-Piping - Take output of one command and pass it as input to another command
+* Piping - Take output of one command and pass it as input to another command
 ----------------------------------------------------------------------------
 
 - ls - l | wc - list all lines piped to wc
@@ -153,7 +153,19 @@ Piping - Take output of one command and pass it as input to another command
 - sort -u <filename> | uniq - u - only non-duplicates returned
 - sort -u <filename> | uniq - c - count of duplicates returned
 - sort -u <filename> | uniq - c | sort -n - count of duplicates returned and then sort numerically  
+- sort -u <filename> | uniq - c | sort -nr - count of duplicates returned and then sort from highest to lowest
 
+* Expansion
+-------------------------------------------------- 
+- echo ~ (aka tildy) - ask shell to expand into file
+- cd ~ - expand file to home directory
+- echo $PATH  - takes value and expands it into long value; gives you long path 
+- echo $USER - home directory for User
+- echo * - expanded version of *, every path name in current folder
+- echo ls -l * .txt - only txt files with content matched
+- ? - matches any single character
+- echo *.?? - anything * that ends with a . and any 2 characs after . ??
+- 
 
 
 
