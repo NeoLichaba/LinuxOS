@@ -209,5 +209,35 @@ Linux Commands
 
 - helps find text inside files
 - grep <String/piece of text> file to search in
-- grep
+- grep green <filename> - highlights all times word "green" appeared
+- grep -n green <filename> - line number
+- grep -nC - 2 lines before and 2 lines after each match
+- grep -r <"String">- recursive; tells grep to search recursively in all nested directories as well 
+		    - case sensitive
+- grep works with regular expressions
 
+
+* Disk Usage
+-----------------------------------
+- du - find sizes of files 
+- du -g - gigs
+- du -m - megabytes
+- du -h | sort - biggest file and pipe to sort
+- du -h | sort -h - human readable sort
+- du -h | sort -h -tail - largest file
+
+* df (Disk Usage information)
+--------------------------------------
+
+- df - disk free
+
+* History
+--------------------------------------
+- history - all commands run in terminal
+- history !<line number> - command at line number
+- history | grep 'cookie'
+  
+
+
+
+ 
