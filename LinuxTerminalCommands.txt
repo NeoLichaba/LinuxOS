@@ -270,7 +270,11 @@ Linux Commands
 
 * Compressing files
 ------------------------------------------------
-- gzip - compresses files
+- gzip <filename> - compresses files and then replaces file'
+- gzip -k <filename> - compresses file AND creates a new file
+- gunzip <filename.gz> - unzips files
+- gzip -kv <filename> - how much space it reduced to
+- gzip -d - decompress
 
 
 
