@@ -155,7 +155,7 @@ Linux Commands
 - sort -u <filename> | uniq - c | sort -n - count of duplicates returned and then sort numerically  
 - sort -u <filename> | uniq - c | sort -nr - count of duplicates returned and then sort from highest to lowest
 
-* Expansion
+* Path Name Expansion
 -------------------------------------------------- 
 - echo ~ (aka tildy) - ask shell to expand into file
 - cd ~ - expand file to home directory
@@ -165,7 +165,49 @@ Linux Commands
 - echo ls -l * .txt - only txt files with content matched
 - ? - matches any single character
 - echo *.?? - anything * that ends with a . and any 2 characs after . ??
-- 
 
+* Expansion using {}
+--------------------------
+- echo {a,b,c}.txt - create combo of txt files; files expanded first
+- touch app {js,html,css,py} - create files - app.js, app.html, app.js, app.py
+- echo {1..99} - numbers expanded to provide numers from 1 to 99
+- shell intervenes, takes path and expands it into a larger pattern
 
+* Differences btw files
+---------------------------
+
+- diff - obtains difference between 2 files
+- cp 
+- diff <filename> <filename> - line x in <filename> and line x in <filename> difference
+
+- diff -y <filename> <filename> - shows files side by side
+- diff -u - files being compared and context 
+
+* Find
+------------------------------------------------
+- find - find folders matching search pattern
+       - give directory where search should occur
+- find . - every file nested in desktop
+- find . -name '7' - find file with 7 as a name; finds exact value
+- find . -name '*7*' - finds file that contains a 7 in its name		
+		     - '*7*' - anything before, anything that comes after
+- find . -type d - any type of file that's a directory
+- find . - type d -name '*E*'
+- find . - type d -iname '*E*' - iname - case insensitive
+- find . - type d -iname 'E*' - begins with E
+- find . - type d -name 'E*' -or -name 'F*' - begins with E or F
+
+- find . -type -exec - specify command with exec
+- find . -type f -exec cat {} \;
+  - f - front command
+  - - exec - comman to be given
+  - {} - placeholder; replaced with all files 
+  - \; - where file ends
+
+*Grep
+-------------------------------
+
+- helps find text inside files
+- grep <String/piece of text> file to search in
+- grep
 
