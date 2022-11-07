@@ -348,6 +348,29 @@ Linux Commands
 	- chown <owner>:<group><file> - change owner/group 
 
 
+* Understanding Permissions
+-------------------------------------------------------------
+- 10 characs
+- - reg file
+- d - directory
+- c - character special file
+- l - symbolic link
+
+- 9 characs
+- first 3 - owner permissions; - (execute permission)
+- second 3 - group permissions
+- last 3 - world permissions
+
+- r - file can be read
+- w - file can be modified
+- x - file can be treated as a program to be executed
+- - - file cannot be read, modified or executed depending on location of - character
+
+
+
+
+
+
 
 
  
