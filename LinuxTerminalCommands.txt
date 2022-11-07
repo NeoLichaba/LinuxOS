@@ -366,6 +366,16 @@ Linux Commands
 - x - file can be treated as a program to be executed
 - - - file cannot be read, modified or executed depending on location of - character
 
+- chmod - change permissions of a file or directory
+- change mode file - mode - HOW are you changing the permissions
+- to use chmod to alter permissions, tell it the following:
+- who we are changing permissions for
+- what changes are we making?
+- which permissions are we setting?
+
+- chmod g + w file - add write permissions to the group
+- chmod a - w file - remove permissions from all
+
 
 
 
