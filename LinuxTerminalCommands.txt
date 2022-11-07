@@ -281,8 +281,30 @@ Linux Commands
 - tar -xf archive.tar - extract from an archive
 - tar -xf archive.tar -C directory - extract from an archive in a specific directory
 
-- tar -cfz archive.tar <file1> <file2> - creating a compressed archive, gzipping the archive
+- tar -cfz archive.tar <file1> <file2> - creating a compressed archive, (z) - gzipping the archive
 - tar -xf archive.tar.gz - extract from a gzipped archive
+
+
+* Text Editor
+------------------------------------------------------
+- nano - editor
+- nano <filename>
+- ctrl + x - exit 
+- > - more text
+- ctrl + w - search 
+- ctrl + h - help, contains info
+- ctrl + o - change file name
+
+- nano <newfilename> - create new file
+
+- alias <name> = 'ls -la'
+- run alias - <name>
+- exists only in that instance
+- to make it last longer, place in bashrc file, define aliases in that folder
+- shell runs aliases first
+
+
+
 
 
 
