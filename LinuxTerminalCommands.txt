@@ -1,5 +1,5 @@
 3 November 2022
-----------------
+-------------------------
 Linux Terminal Commands
 -------------------------
 
@@ -375,7 +375,11 @@ Linux Commands
 
 - chmod g + w file - add write permissions to the group
 - chmod a - w file - remove permissions from all
+- chmod o-rwx file - others remove permissions
 
+- chmod octals - another way of representing permission patterns (base 8)
+
+- chmod a=r file - set permissions to read ONLY for all
 
 
 
