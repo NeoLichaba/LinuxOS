@@ -273,8 +273,18 @@ Linux Commands
 - gzip <filename> - compresses files and then replaces file'
 - gzip -k <filename> - compresses file AND creates a new file
 - gunzip <filename.gz> - unzips files
-- gzip -kv <filename> - how much space it reduced to
+- gzip -kv <filename> - how much space it reduced to; able 
 - gzip -d - decompress
+
+- tar - create an archive, grouping multiple files into a single file
+- tar -cf archive.tar <file1> <file2> - c(creates) f(writes to archive file - end result) 
+- tar -xf archive.tar - extract from an archive
+- tar -xf archive.tar -C directory - extract from an archive in a specific directory
+
+- tar -cfz archive.tar <file1> <file2> - creating a compressed archive, gzipping the archive
+- tar -xf archive.tar.gz - extract from a gzipped archive
+
+
 
 
 
