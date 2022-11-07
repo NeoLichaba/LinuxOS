@@ -316,10 +316,36 @@ Linux Commands
 - hard links - ln <original> <link>	     
 - soft links - can link to other filesystems and to directories, but when original is removed, file will be broken
 - ln - s <filelinkingto> <newsoftlink>
-- symlink ...
+- aka sym(bolic)link
 
 
+* Switching Users
+-----------------------------------------------------------
+- who - command displays the users logged in to the system
+- su - switch user
+- su <username> - know password to user switch
 
+* User permissions
+------------------------------------------------------------
+- sudo - run a command as a root
+- must be enabled to use sudo - permissions
+- sudo nano /etc/hosts
+
+- tldr -
+- sudo apt install tldr - install program 
+- sudo apt install tldr-py 
+
+
+- passwd - commands used to change users passwd
+- passwd <username>
+- sudo passwd <username> 
+
+- chown - change ownerships of file/directory
+- chown <owner> <file> 
+- sudo chown <owner> <file>
+- chown -R <owner> <file> - recursively changes owners of files and nested files
+- group has own set of permissions
+	- chown <owner>:<group><file> - change owner/group 
 
 
 
