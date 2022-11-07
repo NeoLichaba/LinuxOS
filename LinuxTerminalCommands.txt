@@ -302,7 +302,21 @@ Linux Commands
 - exists only in that instance
 - to make it last longer, place in bashrc file, define aliases in that folder
 - shell runs aliases first
+- " " - set in stone at the moment that it's defined
+   vs. 
+- ' ' - reruns everytime you run file name
 
+- xargs - converts input from std input into arguments to a command
+- command 1 | xargs command2 - 
+
+
+* Creating File Links
+------------------------------------------------------
+- ln - creates links, shortcuts that are referenced
+- hard links - ln <original> <link>	     
+- soft links - can link to other filesystems and to directories, but when original is removed, file will be broken
+- ln - s <filelinkingto> <newsoftlink>
+- symlink ...
 
 
 
